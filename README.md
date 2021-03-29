@@ -1,24 +1,25 @@
-# README
+# ScaffoldでのTodoを作成するサンプル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## rails6.0.3でアプリを作成する
 
-Things you may want to cover:
+```linux
+rails _6.0.3_ new todo --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-action-storage --skip-action-cable
+```
 
-* Ruby version
+## scaffoldで色々と作成する
 
-* System dependencies
+```linux
+rails generate scaffold task content:text
+```
 
-* Configuration
+## dbを作成する
 
-* Database creation
+```linux
+rails db:create
+```
 
-* Database initialization
+## dbのマイグレーションを実行する
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```linux
+rails db:migrate
+```
